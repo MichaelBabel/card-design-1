@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    background: linear-gradient(90deg, #d5f2ff, #d8e7ff, #dbdeff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+img {
+    width: 100%;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.card {
+    width: 325px;
+    padding: 1.5rem;
+    border-radius: 15px;
+    background-color: #2E334E;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+.card .icons {
+    color: #fff;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1.5rem;
+}
+
+.card .icons i {
+    cursor: pointer;
+}
+
+.card .icons .more .fa-heart {
+    padding-right: 0.7rem;
+}
+
+.card .profile .profile-image {
+    width: 125px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.card .profile .profile-image img {
+    border-radius: 50%;
+}
+
+.card .profile .profile-image i {
+    position: absolute;
+    right: 13px;
+    bottom: 13px;
+    color: #fff;
+    font-size: 0.9rem;
+    background-color: #2498FA;
+    border-radius: 50%;
+    padding: 4px;
+}
+
+.profile .profile-info .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.profile .profile-info .info h2 {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.profile .profile-info .info span {
+    color: #686f92;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.profile .profile-info .description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile .profile-info .description span {
+    font-size: 0.9rem;
+    color: #a4aac5;
+}
+
+.profile .profile-info .description span.social {
+    text-decoration: underline;
+}
+
+.profile .profile-info .icons-social {
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: #686f92;
+    padding: 1rem 0;
+    cursor: pointer;
+}
+
+.profile .profile-info .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.profile .profile-info .btn a {
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #2498FA;
+    padding: 0.6rem 1.5rem;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.profile .profile-info .btn a:hover {
+    background-color: rgba(36, 154, 250, 0.8);
+}
+
+.profile .profile-info .btn::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(164, 170, 197, 0.338);
+    position: absolute;
+    border-radius: 1rem;
+}
+
+.card .works {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2rem 0 1rem 0;
+}
+
+.card .works .clients,
+.card .works .works-done {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .works .clients .fa-dribbble {
+    color: #C3115B;
+    font-size: 3rem;
+    background-color: #ED3E7B;
+    width: 2.9rem;
+    height: 2.9rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .works .clients .numbers,
+.card .works .works-done .numbers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0.6rem;
+    line-height: 1.3;
+}
+
+.card .works .clients .numbers span:nth-of-type(1),
+.card .works .works-done .numbers span:nth-of-type(1) {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.card .works .clients .numbers span:nth-of-type(2),
+.card .works .works-done .numbers span:nth-of-type(2) {
+    color: #686f92;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.card .works .works-done .fa-behance {
+    color: #fff;
+    font-size: 1.5rem;
+    background-color: #3F77FA;
+    width: 2.9rem;
+    height: 2.9rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+/* Card White */
+
+.card.white {
+    background-color: #fff;
+}
+
+.card .icons.white {
+    color: #2E334E;
+}
+
+.card .info.white h2 {
+    color: #2E334E;
+}
+
+.card .description.white span {
+    color: #686f92;
+}
+
+.card .works .clients .numbers.white span:nth-of-type(1),
+.card .works .works-done .numbers.white span:nth-of-type(1) {
+    color: #2E334E;
+}
